@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Project</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[url('./bgimage.png')] bg-cover bg-center h-screen">
+    <div class="flex flex-row">
+     <div class="group flex flex-row justify-between">
+        <!--logo-->
+        <div class="flex flex-row mt-4 ml-4 flex gap-2">
+             <i class="fa-solid fa-cat text-3xl mt-3 text-[#ffd68e]"></i>
+          <h1 class="text-4xl font-bold text-[#ffd68e] mt-3" style="font-family:'Ubuntu';"> PetZen </h1>
+     </div>
+        <!--Nav bar-->
+     <div class="group flex flex-row gap-10 text-2xl font-bold text-[#ffd68e] mt-11 ml-20 cursor-pointer" style="font-family:'Ubuntu';" >
+        <div class="active:scale-105 transition hover:text-white">Home</div>
+        <div class="active:scale-105 transition hover:text-white">Adopt a Pet</div>
+        <div class="active:scale-105 transition hover:text-white">Donate</div>
+        <div class="active:scale-105 transition hover:text-white">Our Story</div>
+        <div class="active:scale-105 transition hover:text-white">Contact</div>
+    </div>
+    <!--Search bar-->
+    
+    <div class="relative w-64 ml-40 mt-4 ">
+        <div>
+          <input type="search" name="search" id="search"  placeholder="Search" class="bg-transparent border-b-2 border-[#ffd68e] w-full pr-8 mt-10 text-white placeholder:italic 
+          placeholder:text-white">
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass text-[#ffd68e] absolute right-2 top-1/2 -translate-y-1  pointer-events-none text-xl"></i>
+        </div>
+    </div>
+
+    <!--login & signup button near search bar-->
+    <div >
+        <button class="bg-transparent border-2 border-[#ffd68e] px-4 py-2 rounded-3xl mt-10 ml-4 text-[#ffd68e] font-bold active:scale-105 transition hover:text-white hover:bg-yellow-600">Login</button>
+        <button class="bg-[#ffd68e] px-4 py-2 rounded-3xl text-[#795225] font-bold mt-10 active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: 'Ubuntu';">SignUp</button>
+    </div>
+</div>
+    </div>
+    
+  <!--Content of the page-->
+<div class="flex flex-row justify-between">
+<div>
+     <div class="mt-32 ml-20 flex flex-col gap-4 inline-block">
+    <h1 class="text-[#ffd68e] text-6xl font-semibold" style="font-family: 'Cinzel Decorative';">Companionship </h1>
+    <h1 class="text-[#ffd68e] text-6xl font-semibold" style="font-family: 'Cinzel Decorative';;">Starts Here</h1>
+  <p class="text-5xl  text-white" style="font-family:'Ubuntu';"> Find Your Perfect Pet</p>
+    </div>
+    <!--buttons-->
+  <div class="flex flex-row gap-4 mt-10 ml-20" style="font-family: 'Cinzel Decorative';">
+    <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Adopt</button>
+    <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Donate</button>
+    <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Meet Our Pets</button>
+    <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Support Us</button>
+  </div>
+  <!--description of the content-->
+  <div>
+  <p class="text-lg text-white  mt-10 ml-40" style="font-family:'Ubuntu';" >At PetZen, we believe pets make life better. Discover quality products,<br>
+     helpful care advice, and everything you need to keep your beloved <br>
+     companions happy, healthy, and loved.</p>
+  </div>
+ </div>
+  <div class="inline-block mr-20">
+  <img src="cat.png" alt="Cat image">
+  </div>
+</div>
+
+
+
+</div>
+</body>
+</html>
