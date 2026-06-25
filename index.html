@@ -33,29 +33,42 @@
   </div>
 
     <!--login & signup button near search bar-->
+    <div class="hidden md:block">
     <div class="flex flex-row gap-2 md:mr-6 ml-60 md:ml-0" >
         <button class="bg-transparent border-2 border-[#ffd68e] px-4 py-2 rounded-3xl mt-10 ml-4 text-[#ffd68e] font-bold active:scale-105 transition hover:text-white hover:bg-yellow-600">Login</button>
         <button class="bg-[#ffd68e] px-4 py-2 rounded-3xl text-[#795225] font-bold mt-10 active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: 'Ubuntu';">SignUp</button>
     </div>
-
+</div>
     <!--Hamburger button-->
     <div class="md:hidden">
-        <button id="hambtn" class="text-4xl ml-4 mt-12 text-[#ffd68e] font-bold"><i id="icon"  class="fa-solid fa-bars" ></i>  </button>
+        <button id="hambtn" class="text-4xl ml-80 md:ml-4 mt-8 text-[#ffd68e] font-bold"><i id="icon"  class="fa-solid fa-bars" ></i>  </button>
     </div>
 
 
 
  </div> 
+ <!--Mobile-menu-->
+<div id="mbmenu" class="hidden md:hidden flex flex-col gap-4 justify-center items-center bg-transparent ml-40">
+    <div class="mt-10 text-2xl text-[#ffd68e]  font-semibold  hover:text-white cursor-pointer active:scale-95 transition">Home</div>
+      <div class="text-2xl  text-[#ffd68e] font-semibold hover:text-white cursor-pointer active:scale-95 transition">Adopt a Pet</div>
+      <div class="text-2xl  text-[#ffd68e] font-semibold hover:text-white cursor-pointer active:scale-95 transition">Donate</div>
+      <div class="text-2xl  text-[#ffd68e] font-semibold hover:text-white cursor-pointer active:scale-95 transition">Our Story</div>
+      <div class="text-2xl  text-[#ffd68e] font-semibold hover:text-white cursor-pointer active:scale-95 transition">Contact</div>
+    <div class="flex flex-row gap-2 " >
+        <button class="bg-transparent border-2 border-[#ffd68e] px-4 py-2 rounded-3xl mt-10 ml-4 text-[#ffd68e] font-bold active:scale-105 transition hover:text-white hover:bg-yellow-600">Login</button>
+        <button class="bg-[#ffd68e] px-4 py-2 rounded-3xl text-[#795225] font-bold mt-10 active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: 'Ubuntu';">SignUp</button>
+    </div>
+</div>
   <!--Content of the page-->
 <div class="flex flex-row justify-between">
 <div>
-     <div class="mt-32 ml-20 flex flex-col gap-4 inline-block">
+     <div class="mt-32 ml-4 md:ml-20 flex flex-col gap-4 inline-block">
     <h1 class="text-[#ffd68e] text-6xl font-semibold" style="font-family: 'Cinzel Decorative';">Companionship </h1>
     <h1 class="text-[#ffd68e] text-6xl font-semibold" style="font-family: 'Cinzel Decorative';;">Starts Here</h1>
   <p class="text-5xl  text-white" style="font-family:'Ubuntu';"> Find Your Perfect Pet</p>
     </div>
     <!--buttons-->
-  <div class="flex flex-row gap-4 mt-10 ml-20" style="font-family: 'Cinzel Decorative';">
+  <div class="flex flex-row gap-4 mt-10 ml-4 md:ml-20" style="font-family: 'Cinzel Decorative';">
     <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Adopt</button>
     <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Donate</button>
     <button class="rounded-3xl bg-yellow-100 px-6 py-2 font-bold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600">Meet Our Pets</button>
@@ -63,7 +76,7 @@
   </div>
   <!--description of the content-->
   <div>
-  <p class="text-lg text-white  mt-10 ml-40" style="font-family:'Ubuntu';" >At PetZen, we believe pets make life better. Discover quality products,<br>
+  <p class="text-xl md:text-lg text-white  mt-10 ml-4 md:ml-20" style="font-family:'Ubuntu';" >At PetZen, we believe pets make life better. Discover quality products,<br>
      helpful care advice, and everything you need to keep your beloved <br>
      companions happy, healthy, and loved.</p>
   </div>
@@ -75,13 +88,13 @@
 <div>
 
     <!--Search bar-->
-<div class="flex flex-row justify-between items-center">
+<div class="md:flex md:flex-row md:justify-between md:items-center">
     <div class="flex flex-row gap-1">
         <i class="fa-solid fa-magnifying-glass text-[#ffd68e] ml-6 mt-6 pointer-events-none text-3xl"></i>
         <input type="search" id="search" name="search" placeholder="Search here.." class="bg-yellow-100 rounded-full py-2 pl-4 pr-10 m-2 mt-4  md:mt-6">
     </div>
     <!--filter buttons-->
-    <div class="flex flex-row gap-4 md:mr-6 mt-72 md:mt-4">
+    <div class="flex flex-row gap-12 md:gap-4 md:mr-6 mt-8 md:mt-4 ml-12 md:ml-0">
         <button id="allbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">All</button>
         <button id="pbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">Persian Cats</button>
         <button id="bbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">Bengal Cats</button>
@@ -95,55 +108,59 @@
 
 
 <!--Persian card 1-->
-    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+    <div class="cat-card h-82 w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
 
      <img src="persian5.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Robin </p> 
      <div class="flex flex-row justify-between">
         <div class="flex flex-col">
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 1 year Old</p>
         </div>
         <div>
             <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
      </div>
-     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Robin </p> 
+     <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
+     
      </div>
 
 
 <!--Persian  card 2-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
-       <img src="persian2.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+    <div class="cat-card h-82  w-[400px]  md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+        <img src="persian2.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+        <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Caster</p> 
        <div class="flex flex-row justify-between">
        <div class="flex flex-col">    
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2  font-semibold" style="font-family: Ubuntu;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2  font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
             </div> 
         <div>
         <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Caster</p> 
-       
+      
+       <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
      </div>
 
 
 <!--Persian card 3-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
-       <img src="persian6.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+    <div class="cat-card h-82   w-[400px]  md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+        <img src="persian6.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+        <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Bruno</p> 
          <div class="flex flex-row justify-between">
         <div class="flex flex-col">
             <div>
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
            </div> 
        </div>
      <div>
         <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Bruno</p> 
-    
+       
+   <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div> 
 </div>
 </div>
 
@@ -153,54 +170,56 @@
 
 
 <!--Bengal card 1-->
-    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
-
+    <div class="cat-card h-82  w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
      <img src="bengal6.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Jona </p> 
      <div class="flex flex-row justify-between">
         <div class="flex flex-col">
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 1 year Old</p>
         </div>
         <div>
             <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
      </div>
-     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Jona </p> 
+     <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
      </div>
 
 
 <!--Bengal card 2-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
-       <img src="bengal4.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+    <div class="cat-card h-82  w-[400px]  md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
+     <img src="bengal4.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+         <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Deloyd</p> 
        <div class="flex flex-row justify-between">
        <div class="flex flex-col">    
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
             </div> 
         <div>
         <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Deloyd</p> 
+      <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
        
      </div>
 
 
 <!--Bengal card 3-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
-       <img src="bengal5.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+    <div class="cat-card h-82   w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
+           <img src="bengal5.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+        <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Rishi</p> 
          <div class="flex flex-row justify-between">
         <div class="flex flex-col">
             <div>
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
            </div> 
        </div>
      <div>
         <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Rishi</p> 
+       <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
     
 </div>
 </div>
@@ -212,59 +231,73 @@
 
 
 <!--Ragdoll card 1-->
-    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
-
+    <div class="cat-card h-82  w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">  
      <img src="Ragdoll.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Raddy </p> 
      <div class="flex flex-row justify-between">
         <div class="flex flex-col">
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 1 year Old</p>
         </div>
         <div>
             <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
      </div>
-     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Raddy </p> 
+    <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
      </div>
 
 
 <!-- Ragdoll card 2-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
-       <img src="Ragdoll2.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+    <div class="cat-card h-82  w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
+        <img src="Ragdoll2.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+          <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zulan</p> 
        <div class="flex flex-row justify-between">
        <div class="flex flex-col">    
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
             </div> 
         <div>
         <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zulan</p> 
-       
+      
+       <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
      </div>
 
 
 <!--Ragdoll card 3-->
-    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] ml-24 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
-       <img src="ragdoll4.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+    <div class="cat-card h-82  w-[400px] md:w-[350px] md-w-0 bg-[#ffd68e] ml-6 md:ml-0 rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
+              <img src="ragdoll4.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+        <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zyoni</p> 
          <div class="flex flex-row justify-between">
         <div class="flex flex-col">
             <div>
-        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
-        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+        <p  class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2 font-semibold" style="font-family: Ubuntu;">Age: 2 years Old</p>
            </div> 
        </div>
      <div>
         <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
         </div>
         </div>
-       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zyoni</p> 
+       <div class="ml-48 mb-2 text-xl text-[#795225]" style="font-family: Lilita one;">Status: Available</div>
     
 </div>
 </div>
 <hr>
 <hr>
+<script>
+     const button = document.getElementById("hambtn");
+     const menu = document.getElementById("mbmenu");
+     const icon = document.getElementById("icon");
+
+     button.addEventListener("click", () =>{
+        menu.classList.toggle("hidden");
+
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+     })
+</script>
 
 <script>
        const persian = document.getElementById("persiansection");
