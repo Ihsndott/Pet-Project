@@ -10,9 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[url('./bgimage.png')] bg-cover bg-center h-screen">
-    <div class="flex flex-row">
+    
      <div class="group flex flex-row justify-between">
         <!--logo-->
         <div class="flex flex-row mt-4 ml-4 flex gap-2">
@@ -27,26 +28,16 @@
         <div class="active:scale-105 transition hover:text-white">Our Story</div>
         <div class="active:scale-105 transition hover:text-white">Contact</div>
     </div>
-    <!--Search bar-->
-    
-    <div class="relative w-64 ml-40 mt-4 ">
-        <div>
-          <input type="search" name="search" id="search"  placeholder="Search" class="bg-transparent border-b-2 border-[#ffd68e] w-full pr-8 mt-10 text-white placeholder:italic 
-          placeholder:text-white">
-        </div>
-        <div>
-            <i class="fa-solid fa-magnifying-glass text-[#ffd68e] absolute right-2 top-1/2 -translate-y-1  pointer-events-none text-xl"></i>
-        </div>
-    </div>
+  
 
     <!--login & signup button near search bar-->
     <div >
         <button class="bg-transparent border-2 border-[#ffd68e] px-4 py-2 rounded-3xl mt-10 ml-4 text-[#ffd68e] font-bold active:scale-105 transition hover:text-white hover:bg-yellow-600">Login</button>
         <button class="bg-[#ffd68e] px-4 py-2 rounded-3xl text-[#795225] font-bold mt-10 active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: 'Ubuntu';">SignUp</button>
     </div>
-</div>
+
     </div>
-    
+  
   <!--Content of the page-->
 <div class="flex flex-row justify-between">
 <div>
@@ -69,13 +60,271 @@
      companions happy, healthy, and loved.</p>
   </div>
  </div>
-  <div class="inline-block mr-20">
-  <img src="cat.png" alt="Cat image">
+  <div class="inline-block mr-72">
+  <img src="cat1.png" alt="Cat image" class="h-[600px]">
   </div>
 </div>
+<div>
 
-
-
+    <!--Search bar-->
+<div class="flex flex-row justify-between items-center">
+    <div>
+        <i class="fa-solid fa-magnifying-glass text-[#ffd68e] ml-6 mt-6 pointer-events-none text-3xl"></i>
+        <input type="search" id="search" name="search" placeholder="Search here.." class="bg-yellow-100 rounded-full py-2 pl-4 pr-10 m-2 mt-20">
+    </div>
+    <!--filter buttons-->
+    <div class="flex flex-row gap-4 mr-6 mt-20">
+        <button id="allbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">All</button>
+        <button id="pbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">Persian Cats</button>
+        <button id="bbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">Bengal Cats</button>
+        <button id="rbtn" class="bg-yellow-100 rounded-3xl px-4 py-2 font-semibold text-[#55423c] active:scale-105 transition hover:text-white hover:bg-yellow-600" style="font-family: Cinzel Decorative;">Ragdoll Cats</button>
+    </div>
 </div>
+
+<!--persian cards-->
+ <div id="persiansection" class="grid grid-cols-1 gap-20 md:grid md:grid-cols-3 m-20 md:m-10  md:gap-30 md:justify-between md:items-end">
+
+
+
+<!--Persian card 1-->
+    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e]  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+
+     <img src="persian5.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+     </div>
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Robin </p> 
+     </div>
+
+
+<!--Persian  card 2-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+       <img src="persian2.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+       <div class="flex flex-row justify-between">
+       <div class="flex flex-col">    
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+            </div> 
+        <div>
+        <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Caster</p> 
+       
+     </div>
+
+
+<!--Persian card 3-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="Persian">
+       <img src="persian6.jpg" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+         <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+            <div>
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Persian</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+           </div> 
+       </div>
+     <div>
+        <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Bruno</p> 
+    
+</div>
+</div>
+
+<!--Bengal cards-->
+ <div id="bengalsection" class="grid grid-cols-1 gap-20 md:grid md:grid-cols-3 m-20 md:m-10  md:gap-30 md:justify-between md:items-end">
+
+
+
+<!--Bengal card 1-->
+    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e]  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
+
+     <img src="bengal6.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+     </div>
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Jona </p> 
+     </div>
+
+
+<!--Bengal card 2-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
+       <img src="bengal4.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+       <div class="flex flex-row justify-between">
+       <div class="flex flex-col">    
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+            </div> 
+        <div>
+        <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Deloyd</p> 
+       
+     </div>
+
+
+<!--Bengal card 3-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="bengal">
+       <img src="bengal5.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+         <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+            <div>
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Bengal</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+           </div> 
+       </div>
+     <div>
+        <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Rishi</p> 
+    
+</div>
+</div>
+
+
+<!--Ragdoll cards-->
+ <div id="ragdollsection" class="grid grid-cols-1 gap-20 md:grid md:grid-cols-3 m-20 md:m-10  md:gap-30 md:justify-between md:items-end">
+
+
+
+<!--Ragdoll card 1-->
+    <div class="cat-card h-82 w-[350px] md-w-0 bg-[#ffd68e]  rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
+
+     <img src="Ragdoll.jpg" alt="cat image" class="h-60 w-full object-cover  border-4 border-[#55423c] rounded-2xl "> 
+     <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 1 year Old</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+     </div>
+     <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Raddy </p> 
+     </div>
+
+
+<!-- Ragdoll card 2-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
+       <img src="Ragdoll2.webp" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl">  
+       <div class="flex flex-row justify-between">
+       <div class="flex flex-col">    
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+            </div> 
+        <div>
+        <i class="fa-solid fa-heart text-3xl  mr-6 text-red-700"></i>
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zulan</p> 
+       
+     </div>
+
+
+<!--Ragdoll card 3-->
+    <div class="cat-card h-82  w-[350px] md-w-0 bg-[#ffd68e] rounded-2xl cursor-pointer hover:shadow-xl transition-transform duration-300 hover:scale-105" data-breed="ragdoll">
+       <img src="ragdoll4.avif" alt="cat image" class="h-60 w-full  object-cover border-4 border-[#55423c] rounded-2xl"> 
+         <div class="flex flex-row justify-between">
+        <div class="flex flex-col">
+            <div>
+        <p  class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Breed: Ragdoll</p>
+        <p class="text-lg text-[#55423c] ml-2" style="font-family: Lilita One;">Age: 2 years Old</p>
+           </div> 
+       </div>
+     <div>
+        <i class="fa-solid fa-heart text-3xl mr-6 text-red-700"></i>  
+        </div>
+        </div>
+       <p class="text-2xl font-semibold text-[#55423c] ml-32" style="font-family: Cinzel Decorative;">Zyoni</p> 
+    
+</div>
+</div>
+<hr>
+<hr>
+
+<script>
+       const persian = document.getElementById("persiansection");
+       const bengal = document.getElementById("bengalsection");
+       const ragdoll = document.getElementById("ragdollsection");
+       const allbutton = document.getElementById("allbtn");
+       const pbutton = document.getElementById("pbtn");
+       const bbutton = document.getElementById("bbtn");
+       const rbutton = document.getElementById("rbtn");
+
+       allbutton.addEventListener("click", () => {
+            persian.style.display = "grid";
+            bengal.style.display = "grid";
+            ragdoll.style.display = "grid";
+
+       })
+         pbutton.addEventListener("click", () => {
+            persian.style.display = "grid";
+            bengal.style.display = "none";
+            ragdoll.style.display = "none";
+
+       })
+        bbutton.addEventListener("click", () => {
+            persian.style.display = "none";
+            bengal.style.display = "grid";
+            ragdoll.style.display = "none";
+
+       })
+        rbutton.addEventListener("click", () => {
+            persian.style.display = "none";
+            bengal.style.display = "none";
+            ragdoll.style.display = "grid";
+
+       })
+</script>
+<script>
+       const searchbox = document.getElementById("search");
+
+       searchbox.addEventListener("input", () => {
+           
+        const inputvalue = searchbox.value.toLowerCase().trim();
+
+        //If the search box is empty show all in the display else remove all and give what user expect to show
+        if(inputvalue ===""){
+          persian.style.display = "grid";
+          bengal.style.display = "grid";
+          ragdoll.style.display = "grid";
+          return;
+        }
+         {
+          persian.style.display = "none";
+          bengal.style.display = "none";
+          ragdoll.style.display = "none";
+          
+         }
+        if(inputvalue.includes("persian")){
+            persian.style.display = "grid";     
+        }
+        if(inputvalue.includes("bengal")){
+            bengal.style.display = "grid";     
+        }
+        if(inputvalue.includes("ragdoll")){
+            ragdoll.style.display = "grid";     
+        }
+
+       });
+
+    
+</script>
 </body>
 </html>
